@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskMaster</title>
+  <link rel="shortcut icon" href="images/taskmaster-favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="stylesheets/index.css">
+</head>
+
+<body>
+  <div class="nav" id="nav">
+    <div class="list">
+         <button>Home</button>
+         <button onclick="window.location.href='/dashboard'">Dashboard</button>
+         <button>Contacts</button>
+         <button>Other</button>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="hero-text">
+        <h2>Boost Your</h2>
+        <h2>Productivity</h2>
+        <div class="hero-para">
+            <p>Say goodbye to scattered to-do lists and missed deadlines. With our intuitive task management application, you can organize, prioritize, and track your tasks effortlessly Experience seamless collaboration, streamlined workflows, and ultimate productivity.</p>
+
+        </div>
+        <div class="hero-button">
+            <div id="heroBtn">
+              <button onclick="window.location.href='/loginPage'" class="login">JOIN FOR FREE</button>
+              <button onclick="window.location.href='/loginPage'">LOG IN</button>
+            </div>
+            <div id="dashboardBtn">
+              <button onclick="window.location.href='/dashboard'">Dashboard</button>
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+  </div>
+
+
+  <section class="sec2">
+    <div class="sub">
+      <i class="bi bi-check-lg"></i>
+      <h2>Productivity</h2>
+      <p>Boost you produtivity with our platform by prioritizing your tasks and managing deadlines.</p>
+    </div>
+    <div class="sub">
+      <i class="bi bi-database-lock"></i>
+      <h2>Secure</h2>
+      <p>Secure login portal with encryption for seamless and safe access.</p>
+    </div>
+    <div class="sub">
+      <i class="bi bi-people"></i>      
+      <h2>Teams</h2>
+      <p>Create you own teams and work in collaboration</p>
+    </div>
+    <div class="sub">
+      <i class="bi bi-trello"></i>
+      <h2>Dashboard</h2>
+      <p>Comprehensive dashboard that provides all your important info in one place</p>
+    </div>
+  </section>
+
+
+  <section class="sec3">
+    <div class="grid-container">
+      <div class="grid-item" style="background-color: beige;">
+        <img src="images/icons/clock.png" alt="">
+        <h3>Save Time</h3>
+        <p>Everything organised in one place. No clutter</p>
+      </div>
+      <div class="grid-item" style="background-color: aliceblue;">
+        <img src="images/icons/notebook.png" alt="">
+        <h3>Focus on Task</h3>
+        <p>Focus on priority task</p>
+      </div>
+      <div class="grid-item" style="background-color: rgb(255, 219, 255);">
+        <img src="images/icons/microphone.png" alt="">
+        <h3>Broadcast</h3>
+        <p>Broadcast message with your team in  a single click</p>
+      </div>
+      <div class="grid-item" style="background-color: rgb(255, 240, 247);">
+        <img src="images/icons/cloud.png" alt="">
+        <h3>Weather Integration</h3>
+        <p>Realtime weather integration</p>
+      </div>
+      <div class="grid-item" style="background-color: rgb(240, 255, 245);">
+        <img src="images/icons/calendar.png" alt="">
+        <h3>Calendar Integration</h3>
+        <p>Realtime calender with important event integrated</p>
+      </div>
+      <div class="grid-item" style="background-color: rgb(253, 255, 240);">
+        <img src="images/icons/bell.png" alt="">
+        <h3>Reminders</h3>
+        <p>Get notifications on deadlines</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer>
+    <section class="newsletter" id="newsletter">
+      <div>
+        <h2>Want product news and updates?</h2>
+        <h2>Sign up for our newsletter.</h2>
+      </div>
+      <div>
+        <div class="newsletter-input">
+          <form id="letterForm" action="/addEmail">
+            <input type="email" placeholder="Enter your email" name="email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <p>Don't worry! We value your privacy.</p>
+      </div>
+    </section>
+
+    <div class="line">
+    </div>
+
+    <div class="footer-icons">
+      <a href=""><i class="bi bi-instagram"></i></a>
+      <a href="https://github.com/rishavd3v/Task-Manager-Web-App" target="_blank"><i class="bi bi-github"></i></a>
+      <a href=""><i class="bi bi-twitter-x"></i></a>
+      <a href="https://www.linkedin.com/in/rishav01" target="_blank"><i class="bi bi-linkedin"></i></a>
+    </div>
+    <div class="footer-text">
+      <p>©️ 2024 TaskMaster, All rights reserved.</p>
+    </div>
+
+  </footer>
+
+
+<script src="javascripts/index.js"></script>
+</body>
+</html>

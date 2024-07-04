@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster</title>
+    <link rel="shortcut icon" href="images/taskmaster-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheets/profile.css">
+    <style>
+        .name{
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="main">
+        <div class="profile-container">
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="images/blank-profile-picture-973460_1280.png" alt="">
+                </div>
+                <div class="profile-title">
+                    <h3 class="Title"><%= username %></h3>
+                    <p><%= email %></p>
+                </div>
+                <div class="profile-desc">
+                    <p>Lorem ipsum dolor sit, amet co nse ctetur adipisicing elit. Bland, eveniet!</p>
+                </div>
+                <div class="logout-btn">
+                    <a href="/logout"><button>Logout</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
