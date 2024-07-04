@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var expressSession = require('express-session');
+const dotenv = require("dotenv").config()
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var dataRouter = require('./routes/data');
@@ -22,7 +23,7 @@ app.use(expressSession({
   saveUninitialized: false,
   secret: "hello hello",
   cookie: { maxAge: 24 * 60 * 60 * 1000 },
-  store: MongoStore.create({ mongoUrl: 'mongodb://127.0.0.1:27017/demodb' })
+  store: MongoStore.create({ mongoUrl: process.env.DB_STRING})
 }));
 app.use(passport.initialize());
 app.use(passport.session());
